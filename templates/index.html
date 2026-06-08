@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATP Médicaments</title>
+</head>
+<body>
+
+<h2>Recherche médicaments</h2>
+
+<form method="POST">
+    <input type="text" name="recherche" placeholder="Ex: amo..." required>
+    <button type="submit">Rechercher</button>
+</form>
+
+<ul>
+    {% for r in resultats %}
+        <li>{{ r }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
